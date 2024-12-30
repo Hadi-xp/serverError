@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 
-app.get('/api/error', (req, res) => {
+app.get('/', (req, res) => {
     res.status(500).send('Internal Server Error');
 });
 
