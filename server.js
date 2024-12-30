@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 
-app.get('/', (req, res) => {
+app.get('/error', (req, res) => {
     const respon = axios.get('https://hadi-xp.github.io/serverError/');
     res.status(500).send(`${respon}`);
 });
